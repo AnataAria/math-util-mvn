@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.anataarisa.math.util.mvn</groupId>
+    <artifactId>math-util-mvn</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <exec.mainClass>com.anataarisa.mathutil.main.Main</exec.mainClass>
+    </properties>
+    <dependencies>
+        <!--- Day la noi khai bao cac thu vien se dung trong code Thu vien ke tu nay se goi la dependency. Khai bao jdbc, json, rest api, jwt...  Cac thu vien dung trong code cua minh o day Khai bao = cach len kho jar toan cau - kho tong lay khai bao mau copy and paste -->
+       <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
+<dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter</artifactId>
+    <version>5.10.0</version>
+    <scope>test</scope>
+</dependency>
+
+<dependency>
+    <groupId>org.hamcrest</groupId>
+    <artifactId>hamcrest-core</artifactId>
+    <version>2.2</version>
+    <scope>test</scope>
+</dependency>
+    </dependencies>
+    <!-- phan  build/plugin la noi khai bao cac thu vien danh rieng cho maven chay khi no dong goi app. It dung phan nay -->
+    <build>
+        <plugins>
+            <plugin>
+                <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-jar-plugin</artifactId>
+    <version>3.1.1</version>
+
+            </plugin>
+            <plugin><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.1.2</version>
+
+</plugin>
+        </plugins>
+    </build>
+</project>
