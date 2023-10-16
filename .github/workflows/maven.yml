@@ -29,3 +29,10 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+    - name: Distribute jar-file file
+      run: mkdir staging && cp target/*.jar staging
+    - name: Make hyperlink to jar-war file
+      uses: actions/upload-artifact@v1
+      with:
+        name: DOWNLOAD-JAR-HERE
+        path: staging
