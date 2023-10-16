@@ -1,4 +1,4 @@
-![npm package](https://img.shields.io/badge/npm%20package-v1-brightgreen.svg)
+[![Math-Util-Maven CI](https://github.com/AnataAria/math-util-mvn/actions/workflows/maven.yml/badge.svg)](https://github.com/AnataAria/math-util-mvn/actions/workflows/maven.yml)
 # Welcome to Math Utility Repository
 ## You will find in this repo the following stuff:
 - A maven project to demonstate the legendary Math library
