@@ -29,5 +29,9 @@ public class MathUtilTest {
     public void verifyFactorialGivenRightArgument1ReturnOk(){
         assertEquals(1, MathUtility.getFactorial(1));
     }
+    @Test
+    public void verifyFactorialRegressionGivenRightArgument1ReturnOk(){
+        assertEquals(1,MathUtility.getFactorialUsingRegression(1));
+    }
     
 }
