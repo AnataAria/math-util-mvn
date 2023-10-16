@@ -20,7 +20,7 @@ public class MathUtility {
     public static long getFactorial(int n){
         if(n< 0 || n > 20) throw new IllegalArgumentException("Invalid n. n must be 0..20");
         if(n==0 || n==1) return 1;//Ket thuc som ham
-        long result = 1;
+        long result = 10;
         for(int i = 2; i <= n; i++) result *= i;
         return result;
     }
